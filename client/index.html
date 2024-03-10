@@ -8,13 +8,17 @@
 <body>
     <br/>
     <h3>Insert a row</h3>
-    <button id = "insertRow" onclick="insertRow()">Insert row</button>
+    <button id="insertRow">Insert row</button>
+    <div id="tableDisplay"></div>
     <br/>
     <br/>
     <h2>or</h2>
     <br/>
     <h3>Send a query</h3>
-   <input type = "text" id = "queryToSend" placeholder="query">
-   <script src = "client.js"></script>
+    <form id="queryForm">
+        <input type="text" id="queryToSend" placeholder="query">
+        <button type="submit">Submit Query</button>
+    </form>
+    <script src="client.js"></script>
 </body>
 </html>
