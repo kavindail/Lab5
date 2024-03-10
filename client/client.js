@@ -60,7 +60,6 @@ function createTable(data) {
   const tbody = document.createElement('tbody');
   const headerRow = document.createElement('tr');
 
-  // Assuming data is an array of objects
   if(data.length > 0) {
     Object.keys(data[0]).forEach(key => {
       const headerCell = document.createElement('th');
@@ -82,7 +81,7 @@ function createTable(data) {
     table.appendChild(thead);
     table.appendChild(tbody);
     const displayDiv = document.getElementById('tableDisplay');
-    displayDiv.innerHTML = ''; // Clear previous table
+    displayDiv.innerHTML = ''; 
     displayDiv.appendChild(table);
   } else {
     document.getElementById('tableDisplay').textContent = "No data to display.";
